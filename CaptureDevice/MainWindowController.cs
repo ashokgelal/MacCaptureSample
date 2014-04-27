@@ -43,6 +43,11 @@ namespace CaptureDevice
             }
         }
 
+        public override void AwakeFromNib()
+        {
+            Window.BackgroundColor = NSColor.Black;
+        }
+
         AVCaptureSession session;
 
         public override void WindowDidLoad()
